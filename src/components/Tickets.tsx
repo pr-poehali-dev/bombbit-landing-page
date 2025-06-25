@@ -26,9 +26,9 @@ const Tickets = () => {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-b from-gray-900 to-black text-white">
+    <section className="py-20 bg-gradient-to-b from-pink-50 via-white to-purple-50">
       <div className="container mx-auto px-4">
-        <h2 className="text-5xl font-bold text-center mb-16 bg-gradient-to-r from-yellow-400 to-orange-400 bg-clip-text text-transparent">
+        <h2 className="text-5xl font-bold text-center mb-16 bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent">
           Билеты
         </h2>
 
@@ -36,7 +36,7 @@ const Tickets = () => {
           {tickets.map((ticket, index) => (
             <Card
               key={index}
-              className="bg-gradient-to-br from-gray-800/50 to-gray-900/50 border-gray-700 hover:scale-105 transition-all duration-300"
+              className="bg-white/90 backdrop-blur-sm border-pink-200 hover:scale-105 transition-all duration-300 shadow-xl hover:shadow-2xl"
             >
               <CardHeader
                 className={`bg-gradient-to-r ${ticket.color} p-6 rounded-t-lg`}
@@ -49,8 +49,8 @@ const Tickets = () => {
                 </div>
               </CardHeader>
               <CardContent className="p-6 text-center">
-                <p className="text-gray-300 mb-6">{ticket.description}</p>
-                <Button className="w-full bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white font-semibold py-3 rounded-full">
+                <p className="text-gray-700 mb-6">{ticket.description}</p>
+                <Button className="w-full bg-gradient-to-r from-pink-400 to-purple-500 hover:from-pink-500 hover:to-purple-600 text-white font-semibold py-3 rounded-full shadow-lg">
                   <Icon name="Ticket" size={20} className="mr-2" />
                   Купить билет
                 </Button>
